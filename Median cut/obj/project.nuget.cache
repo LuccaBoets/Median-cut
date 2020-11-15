@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BCYSSipEqYR2e1p15rdmni66+uKyeTzyRySiYWM/LHxzaI0w6GtJeMTGg4NcVqVukay3aq4jv737nOUNSRHH8A==",
+  "dgSpecHash": "AoR6U72odsJyFAxpUjIwzN1CBjZ7YfvEbclzpzmOlq62Bcmy+LLL5HHWtDUKe6iIzAoOqD+x32rrZ/Tuc9Je6g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut\\Median cut.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\boets\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\boets\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\boets\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

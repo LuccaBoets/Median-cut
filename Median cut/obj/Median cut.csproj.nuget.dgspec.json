@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut\\Median cut.csproj": {}
+    "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut.csproj": {}
   },
   "projects": {
-    "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut\\Median cut.csproj": {
+    "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut\\Median cut.csproj",
+        "projectUniqueName": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut.csproj",
         "projectName": "Median cut",
-        "projectPath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut\\Median cut.csproj",
+        "projectPath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut.csproj",
         "packagesPath": "C:\\Users\\boets\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut\\obj\\",
+        "outputPath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\boets\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
