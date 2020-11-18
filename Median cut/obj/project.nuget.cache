@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AoR6U72odsJyFAxpUjIwzN1CBjZ7YfvEbclzpzmOlq62Bcmy+LLL5HHWtDUKe6iIzAoOqD+x32rrZ/Tuc9Je6g==",
+  "dgSpecHash": "/YCMoVOHa9z1nf3xTc4LKhvsR7mQuwiyM11m/XL7gRr+4MlrUIcyrq9+4fjEThDAVs7ryCAu/hzfkG9z9g9hmw==",
   "success": true,
   "projectFilePath": "C:\\Users\\boets\\OneDrive\\Documents\\GitHub\\Median-cut\\Median cut\\Median cut.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\boets\\.nuget\\packages\\materialdesigncolors\\1.2.7\\materialdesigncolors.1.2.7.nupkg.sha512",
+    "C:\\Users\\boets\\.nuget\\packages\\materialdesignthemes\\3.2.0\\materialdesignthemes.3.2.0.nupkg.sha512",
     "C:\\Users\\boets\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\boets\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
     "C:\\Users\\boets\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512"

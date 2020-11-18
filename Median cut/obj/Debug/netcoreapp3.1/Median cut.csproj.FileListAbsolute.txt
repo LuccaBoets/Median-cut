@@ -1,20 +1,22 @@
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Median cut.exe
-C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csprojAssemblyReference.cache
-C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csproj.ResolveComReference.cache
-C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.AssemblyInfoInputs.cache
-C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.AssemblyInfo.cs
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Median cut.deps.json
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Median cut.runtimeconfig.json
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Median cut.runtimeconfig.dev.json
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Median cut.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Median cut.pdb
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\MaterialDesignColors.dll
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\MaterialDesignThemes.Wpf.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csproj.ResolveComReference.cache
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.AssemblyInfoInputs.cache
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.AssemblyInfo.cs
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csproj.CoreCompileInputs.cache
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csproj.CopyComplete
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.pdb
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.genruntimeconfig.cache
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csprojAssemblyReference.cache
