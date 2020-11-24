@@ -62,7 +62,7 @@ namespace Median_cut
                 var child1Color = child1.run();
                 child2 = new Bucket(iteration + 1, ranges[1]);
                 var child2Color = child2.run();
-                
+
                 var colors = child1Color.Concat(child2Color).ToList();
                 return colors;
             }
@@ -105,7 +105,15 @@ namespace Median_cut
 
         public void show()
         {
-            Console.WriteLine($"{iteration} {range.allPixelColors.Count}");
+            if (iteration != MAX_ITERATION)
+            {
+                Console.WriteLine($"{iteration} {range.allPixelColors.Count} {range.colorIndex[0]}");
+            }
+            else
+            {
+                Console.WriteLine($"{iteration} {range.allPixelColors.Count}");
+            }
+
             if (child1 != null)
             {
                 child1.show();

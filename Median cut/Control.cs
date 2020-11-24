@@ -40,21 +40,21 @@ namespace Median_cut
             if (red > green && red > blue)
             {
                 Console.WriteLine("red");
-                range = new Range( 0);
+                range = new Range();
                 bucket = new Bucket(1, range);
 
             }
             else if (green > red && green > blue)
             {
                 Console.WriteLine("green");
-                range = new Range(1);
+                range = new Range();
                 bucket = new Bucket(1, range);
 
             }
             else
             {
                 Console.WriteLine("blue");
-                range = new Range(2);
+                range = new Range();
                 bucket = new Bucket(1, range);
 
             }
@@ -65,19 +65,8 @@ namespace Median_cut
             bucket.show();
 
             Console.WriteLine(colors.Count);
+           
             return colors;
-            //foreach (var color in colors)
-            //{
-            //    Console.WriteLine($"{color.R} {color.G} {color.B}");
-            //}
-            //Console.WriteLine(JsonSerializer.Serialize(value: colors));
-            //        {
-            //            "employees":[
-            //              { "firstName":"John", "lastName":"Doe"},
-            //  { "firstName":"Anna", "lastName":"Smith"},
-            //  { "firstName":"Peter", "lastName":"Jones"}
-            //]
-            //}
         }
     }
 }

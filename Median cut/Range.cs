@@ -8,74 +8,67 @@ namespace Median_cut
 {
     class Range
     {
-        public int colorIndex { get; set; }
+        public List<ColorIndex> colorIndex { get; set; }
 
         public List<Color> allPixelColors { get; set; }
 
-        public Range(int colorIndex)
+        public Range()
         {
             this.allPixelColors = new List<Color>();
-            this.colorIndex = colorIndex;
+            this.colorIndex = new List<ColorIndex>();
         }
+
+        public enum ColorIndex
+        {
+            R,
+            G,
+            B
+        }
+
 
         public List<Range> divideRange()
         {
             var ranges = new List<Range>();
 
-            var red = 0;
-            var green = 0;
-            var blue = 0;
+            Dictionary<ColorIndex, int> colorValuesFromPixels =
+                new Dictionary<ColorIndex, int>();
+
+            colorValuesFromPixels.Add(ColorIndex.R, 0);
+            colorValuesFromPixels.Add(ColorIndex.G, 0);
+            colorValuesFromPixels.Add(ColorIndex.B, 0);
 
             foreach (var color in allPixelColors)
             {
-                red += color.R;
-                green += color.G;
-                blue += color.B;
-            }
-            if (red > green && red > blue)
-            {
-                Console.WriteLine("red");
-                colorIndex = 0;
-            }
-            else if (green > red && green > blue)
-            {
-                Console.WriteLine("green");
-                colorIndex = 1;
-            }
-            else
-            {
-                Console.WriteLine("blue");
-                colorIndex = 2;
+                colorValuesFromPixels[ColorIndex.R] += color.R;
+                colorValuesFromPixels[ColorIndex.G] += color.G;
+                colorValuesFromPixels[ColorIndex.B] += color.B;
             }
 
-            allPixelColors = allPixelColors.OrderBy(o => getColor(o)).ToList();
+            colorValuesFromPixels = colorValuesFromPixels.OrderByDescending(o => o.Value).ToDictionary(x => x.Key, x => x.Value);
 
-            ranges.Add(new Range(colorIndex)); 
-            ranges.Add(new Range(colorIndex));
+            colorIndex.Add(colorValuesFromPixels.ElementAt(0).Key);
+            colorIndex.Add(colorValuesFromPixels.ElementAt(1).Key);
+            colorIndex.Add(colorValuesFromPixels.ElementAt(2).Key);
+
+            allPixelColors = allPixelColors.OrderBy(o => getColor(o, colorValuesFromPixels.ElementAt(0).Key)).ThenBy(o => getColor(o, colorValuesFromPixels.ElementAt(1).Key)).ThenBy(o => getColor(o, colorValuesFromPixels.ElementAt(2).Key)).ToList();
+
+            ranges.Add(new Range());
+            ranges.Add(new Range());
 
             return ranges;
         }
 
-        //public bool InRange(int number)
-        //{
-        //    if (number1 <= number && number2 >= number)
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
-        public int getColor(Color color)
+        public int getColor(Color color, ColorIndex colorIndex)
         {
-            if (colorIndex == 0)
+            if (colorIndex == ColorIndex.R)
             {
                 return color.R;
             }
-            else if (colorIndex == 1)
+            else if (colorIndex == ColorIndex.G)
             {
                 return color.G;
             }
-            else if (colorIndex == 2)
+            else if (colorIndex == ColorIndex.B)
             {
                 return color.B;
             }

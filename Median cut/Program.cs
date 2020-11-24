@@ -10,9 +10,11 @@ namespace Median_cut
     {
         static void Main(string[] args)
         {
-            //Image image = Image.FromFile("..\\..\\..\\..\\testR.jpg");
-            Image image = Image.FromFile("..\\..\\..\\..\\testG.jpg");
+            Image image = Image.FromFile("..\\..\\..\\..\\testR.jpg");
+            //Image image = Image.FromFile("..\\..\\..\\..\\testG.jpg");
             //Image image = Image.FromFile("..\\..\\..\\..\\testB.png");
+            //Image image = Image.FromFile("..\\..\\..\\..\\testYB.jpg");
+            //Image image = Image.FromFile("..\\..\\..\\..\\testBR.jpg");
             Control.run(image);
         }
     }
