@@ -30,27 +30,29 @@ namespace Median_cut
         {
             var ranges = new List<Range>();
 
-            Dictionary<ColorIndex, int> colorValuesFromPixels =
-                new Dictionary<ColorIndex, int>();
+            //Dictionary<ColorIndex, int> colorValuesFromPixels =
+            //    new Dictionary<ColorIndex, int>();
 
-            colorValuesFromPixels.Add(ColorIndex.R, 0);
-            colorValuesFromPixels.Add(ColorIndex.G, 0);
-            colorValuesFromPixels.Add(ColorIndex.B, 0);
+            //colorValuesFromPixels.Add(ColorIndex.R, 0);
+            //colorValuesFromPixels.Add(ColorIndex.G, 0);
+            //colorValuesFromPixels.Add(ColorIndex.B, 0);
 
-            foreach (var color in allPixelColors)
-            {
-                colorValuesFromPixels[ColorIndex.R] += color.R;
-                colorValuesFromPixels[ColorIndex.G] += color.G;
-                colorValuesFromPixels[ColorIndex.B] += color.B;
-            }
+            //foreach (var color in allPixelColors)
+            //{
+            //    colorValuesFromPixels[ColorIndex.R] += color.R;
+            //    colorValuesFromPixels[ColorIndex.G] += color.G;
+            //    colorValuesFromPixels[ColorIndex.B] += color.B;
+            //}
 
-            colorValuesFromPixels = colorValuesFromPixels.OrderByDescending(o => o.Value).ToDictionary(x => x.Key, x => x.Value);
+            //colorValuesFromPixels = colorValuesFromPixels.OrderByDescending(o => o.Value).ToDictionary(x => x.Key, x => x.Value);
 
-            colorIndex.Add(colorValuesFromPixels.ElementAt(0).Key);
-            colorIndex.Add(colorValuesFromPixels.ElementAt(1).Key);
-            colorIndex.Add(colorValuesFromPixels.ElementAt(2).Key);
+            //colorIndex.Add(colorValuesFromPixels.ElementAt(0).Key);
+            //colorIndex.Add(colorValuesFromPixels.ElementAt(1).Key);
+            //colorIndex.Add(colorValuesFromPixels.ElementAt(2).Key);
 
-            allPixelColors = allPixelColors.OrderBy(o => getColor(o, colorValuesFromPixels.ElementAt(0).Key)).ThenBy(o => getColor(o, colorValuesFromPixels.ElementAt(1).Key)).ThenBy(o => getColor(o, colorValuesFromPixels.ElementAt(2).Key)).ToList();
+            //allPixelColors = allPixelColors.OrderBy(o => getColor(o, colorValuesFromPixels.ElementAt(0).Key)).ThenBy(o => getColor(o, colorValuesFromPixels.ElementAt(1).Key)).ThenBy(o => getColor(o, colorValuesFromPixels.ElementAt(2).Key)).ToList();
+
+            allPixelColors = allPixelColors.OrderBy(o => o.GetHue()).ThenBy(o => o.GetBrightness()).ThenBy(o => o.GetSaturation()).ToList();
 
             ranges.Add(new Range());
             ranges.Add(new Range());

@@ -26,35 +26,6 @@ namespace Median_cut
             {
                 var ranges = range.divideRange();
 
-                //foreach (var pixelColor in range.allPixelColors)
-                //{
-                //    //foreach (var range in ranges)
-                //    //{
-                //    //    if (range.InRange(pixelColor.R))
-                //    //    {
-                //    //        range.allPixelColors.Add(pixelColor);
-                //    //        break;
-                //    //    }
-                //    //}
-
-                //    if (ranges[0].number2 == range.getColor(pixelColor))
-                //    {
-                //        split.Add(pixelColor);
-                //    }
-                //    else if (ranges[0].InRange(range.getColor(pixelColor))) // TODO: bucket need to have equal pixels
-                //    {
-                //        ranges[0].allPixelColors.Add(pixelColor);
-                //    }
-                //    else if (ranges[1].InRange(range.getColor(pixelColor)))
-                //    {
-                //        ranges[1].allPixelColors.Add(pixelColor);
-                //    }
-                //    else
-                //    {
-                //        throw new Exception("Pixels Doesn't fit in range");
-                //    }
-                //}
-
                 ranges[0].allPixelColors = range.allPixelColors.Take(range.allPixelColors.Count / 2).ToList();
                 ranges[1].allPixelColors = range.allPixelColors.Skip(range.allPixelColors.Count / 2).ToList();
 
@@ -105,14 +76,14 @@ namespace Median_cut
 
         public void show()
         {
-            if (iteration != MAX_ITERATION)
-            {
-                Console.WriteLine($"{iteration} {range.allPixelColors.Count} {range.colorIndex[0]}");
-            }
-            else
-            {
+            //if (iteration != MAX_ITERATION)
+            //{
+            //    Console.WriteLine($"{iteration} {range.allPixelColors.Count} {range.colorIndex[0]}");
+            //}
+            //else
+            //{
                 Console.WriteLine($"{iteration} {range.allPixelColors.Count}");
-            }
+            //}
 
             if (child1 != null)
             {
