@@ -19,3 +19,4 @@ C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcore
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.dll
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.pdb
 C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.genruntimeconfig.cache
+C:\Users\boets\OneDrive\Documents\GitHub\Median-cut\Median cut\obj\Debug\netcoreapp3.1\Median cut.csprojAssemblyReference.cache
